@@ -1,0 +1,19 @@
+{
+  "name": "rpsls",
+  "version": "1.0.0",
+  "description": "A simple implementation of the famous Rock-Paper-Scissors-Lizard-Spock game which was introduced in the popular Sitcom \"The Big Bang Theory\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ragavendhar",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^4.1.2",
+    "babel-plugin-import": "^1.13.0",
+    "next": "^9.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
