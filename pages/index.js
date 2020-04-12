@@ -1,24 +1,24 @@
 import React from 'react';
+import { Layout } from 'antd';
 import '../style.css';
+import FooterContent from '../components/FooterContent';
+
+const { Header, Content, Footer } = Layout;
 
 export default function index() {
     return (
-        <div class="main-container">
-            <div class="header">
-                <div class="logo">RPSLS</div>
-                <div class="header-tabs-cont">
-                    <a href="/" class="header-link">
-                        <div class="link-text">Rules</div>
-                    </a>
-                    <a href="/" class="header-link">
-                        <div class="link-text">Leaderboard</div>
-                    </a>
-                    <a href="/" class="header-link">
-                        <div class="link-text">Contact</div>
-                    </a>
+        <Layout>
+            <Header className="header">
+                <div className="title">RPSLS</div>
+            </Header>
+            <Content>
+                <div className="content">
+                    
                 </div>
-            </div>
-            <div class="content"></div>
-        </div>
+            </Content>
+            <Footer style={{textAlign: 'center', backgroundColor: '#bbbbbb', boxShadow: '0px -3px 10px -8px #000'}}>
+                <FooterContent />
+            </Footer>
+        </Layout>
     )
 }
