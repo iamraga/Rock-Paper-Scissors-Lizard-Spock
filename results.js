@@ -92,12 +92,3 @@ const results = {
 }
 
 export default results;
-
-Paper covers Rock
-Lizard poisons Spock
-Spock smashes Scissors
-Spock vaporises Rock
-Paper disproves Spock
-Scissors decapitates Lizard
-Lizard eats Paper
-Rock crushes Lizard
