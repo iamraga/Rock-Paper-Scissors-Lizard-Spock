@@ -10,7 +10,7 @@ export default function FooterContent() {
                 <a href="https://www.linkedin.com/in/ragavendhar-t" target="_blank"><LinkedinOutlined /></a>
                 <a href="https://twitter.com/RagavendharT" target="_blank"><TwitterOutlined /></a>
             </div>
-            <a href="https://github.com/iamraga/word-play" target="_blank" style={{fontSize: '14px', color: '#000'}}>Check out the source code here</a>
+            <a href="https://github.com/iamraga/word-play" target="_blank" style={{fontSize: '15px', color: '#000'}}>Check out the source code here</a>
         </div>
     )
 }

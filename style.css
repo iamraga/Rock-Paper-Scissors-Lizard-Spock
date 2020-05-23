@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 body {
     margin: 0px;
     padding: 0px;
@@ -11,12 +13,12 @@ a:hover {
 }
 .header {
     background-color: #8945b3;
-    box-shadow: 0px -6px 16px 4px #000;;
+    box-shadow: 0px -6px 16px 4px #000;
+    height: 120px;
 }
 .title {
     color: #fff;
     text-align: center;
-    padding: 25px 0px;
     font-size: 30px;
 }
 .content {
@@ -41,4 +43,144 @@ a:hover {
     text-align: center;
     background-color: #dadada;
     box-shadow: 0px -3px 10px -8px #000;
+}
+
+.mainContainer {
+    padding: 15px 15px;
+}
+
+.introContent {
+    font-size: 20px;
+    text-indent: 4em;
+}
+
+.question {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.gesture {
+    width: 250px;
+    background-color: white;
+    border: 1px solid #8945b3;
+    margin: 20px 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.gestureDesc {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.gestureImg {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.rulesList {
+    list-style: none;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.rulesCont {
+    background-color: white;
+    border: 1px solid #8945b3;
+    margin: 20px 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.iframeDiv {
+    width: 100%;
+    height: 400px;
+    margin: 40px 0px;
+}
+
+.iframe {
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.startButton {
+    position: relative;
+    width: 80%;
+    margin: 10px 0px;
+    font-size: 20px;
+    height: 70px;
+    color: white;
+    border: 1px solid #8945b3;
+    background-color: #8945b3;
+    -webkit-transition: ease;
+    transition: ease 0.3s;
+}
+
+.startButton:hover {
+    background-color: #8945b3;
+    border: 1px solid #8945b3;
+    box-shadow: 2px 2px 12px -2px #000;
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 70px;
+    }
+    .title {
+        font-size: 15px;
+    }
+    .question {
+        font-size: 20px;
+    }
+    .answer, .rulesList {
+        font-size: 16px;
+    }
+    .gestureDesc {
+        font-size: 16px;
+    }
+    .gesture {
+        width: 120px;
+        background-color: white;
+        border: 1px solid #8945b3;
+        margin: 20px 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    .rulesCont {
+        background-color: white;
+        border: 1px solid #8945b3;
+        margin: 20px 10px;
+        padding: 20px;
+        text-align: center;
+    }
+    .gestureImg {
+        max-height: 50px;
+        max-width: 50px;
+    }
+    .contact {
+        font-size: 15px;
+    }
+    .social a {
+        font-size: 20px;
+    }
+    .footer {
+        padding: 10px;
+    }
+    .iframeDiv {
+        width: 100%;
+        height: 200px;
+    }
+    .iframe {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+    }
 }
