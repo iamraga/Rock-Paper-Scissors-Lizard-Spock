@@ -10,9 +10,9 @@ export default function index() {
             <div className="content">
                 <Row justify="center" style={{marginTop: '20px'}}>
                     <Col xs={22} sm={22} md={20} lg={16} xl={16} style={{padding: '0px 10px'}}>
-                        <h1 className="question">What is Rock Paper Scissors Lizard Spock?</h1>
+                        <h1 className="question">What is Rock-Paper-Scissors-Lizard-Spock?</h1>
                         <div className="introContent">
-                            <p className="answer">"Rock Paper Scissors" Lizard Spock was invented by Internet pioneer Sam Kass, as an improvement on the <i>classic</i> game "Rock-Paper-Scissors".</p>
+                            <p className="answer">"Rock-Paper-Scissors-Lizard-Spock" was invented by Internet pioneer Sam Kass, as an improvement on the <i>classic</i> game "Rock-Paper-Scissors".</p>
                             <p className="answer" style={{textIndent: '0'}}>It seems like when you know someone well enough, <b>75-80%</b> of any Rock-Paper-Scissors games you play with that person end up in a tie. Well, this is a slight variation that reduces that probability.</p>
                         </div>
                         <h1 className="question">Hand gestures</h1>
