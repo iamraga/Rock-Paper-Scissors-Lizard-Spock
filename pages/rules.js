@@ -1,6 +1,7 @@
 import React from 'react'
 import MyLayout from '../components/MyLayout';
-import { Row, Col, Divider } from 'antd';
+import { Row, Col, Divider, Button } from 'antd';
+import Link from 'next/link';
 
 export default function Rules() {
     return (
@@ -30,6 +31,9 @@ export default function Rules() {
                     <div className="iframeDiv txt-center">
                         <iframe className="iframe" src="https://www.youtube.com/embed/x5Q6-wMx-K8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
+                </Col>
+                <Col xs={20} sm={20} md={16} lg={16} xl={16} style={{textAlign: 'center'}}>
+                    <Button type="primary" className="startButton" style={{width: '60%'}}><Link href="/play">Play game!</Link></Button>
                 </Col>
             </Row>
         </MyLayout>

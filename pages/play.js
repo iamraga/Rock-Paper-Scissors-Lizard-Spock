@@ -26,7 +26,7 @@ const Play = () => {
 
     //Functions
     function begin() {
-        if(username === '') {
+        if(username.trim() === '') {
             message.error("Your name cannot be empty");
             return false;
         }
