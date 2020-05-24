@@ -33,7 +33,7 @@ export default function Rules() {
                     </div>
                 </Col>
                 <Col xs={20} sm={20} md={16} lg={16} xl={16} style={{textAlign: 'center'}}>
-                    <Button type="primary" className="startButton" style={{width: '60%'}}><Link href="/play">Play game!</Link></Button>
+                    <Button type="primary" className="startButton" style={{width: '60%'}}><Link href="/play"><a>Play game!</a></Link></Button>
                 </Col>
             </Row>
         </MyLayout>

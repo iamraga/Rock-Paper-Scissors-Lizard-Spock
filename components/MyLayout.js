@@ -12,7 +12,7 @@ export default function MyLayout(props) {
             <Header className="header">
                 <Row justify="center" align="middle" style={{height: '100%'}}>
                     <Col xs={24} sm={24} md={16} lg={8} xl={8}>
-                        <div className="title"><Link href="/">Rock Paper Scissors Lizard Spock</Link></div>
+                        <div className="title"><Link href="/"><a>Rock Paper Scissors Lizard Spock</a></Link></div>
                     </Col>
                 </Row>
             </Header>

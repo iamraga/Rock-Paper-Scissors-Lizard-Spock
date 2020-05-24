@@ -28,7 +28,7 @@ export default function UserInfo({ begin, username, setUsername }) {
             </Row>
             <Row justify="center">
                 <Col xs={16} sm={16} md={8} lg={8} xl={8} style={{textAlign: 'center'}}>
-                    <Button className="viewRules"><Link href='/rules'>View game rules</Link></Button>
+                    <Button className="viewRules"><Link href='/rules'><a>View game rules</a></Link></Button>
                     <Button type="primary" className="startButton" onClick={begin}>Let's begin!</Button>
                 </Col>
             </Row>

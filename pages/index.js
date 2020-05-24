@@ -42,10 +42,10 @@ export default function index() {
                 </Row>
                 <Row justify="center" className="startCont">
                     <Col xs={16} sm={16} md={8} lg={8} xl={8} style={{textAlign: 'center'}}>
-                        <Button type="primary" className="startButton"><Link href="/rules">Game Rules</Link></Button>
+                        <Button type="primary" className="startButton"><Link href="/rules"><a>Game Rules</a></Link></Button>
                     </Col>
                     <Col xs={16} sm={16} md={8} lg={8} xl={8} style={{textAlign: 'center'}}>
-                        <Button type="primary" className="startButton"><Link href="/play">Play game!</Link></Button>
+                        <Button type="primary" className="startButton"><Link href="/play"><a>Play game!</a></Link></Button>
                     </Col>
                 </Row>
             </div>
