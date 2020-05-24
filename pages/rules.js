@@ -21,6 +21,7 @@ export default function Rules() {
                                 <li><p>Lizard eats Paper</p></li>
                                 <li><p>Paper disproves Spock</p></li>
                                 <li><p>Spock vaporises Rock</p></li>
+                                <li><p style={{fontSize: '14px'}}><i>and as it always has...</i></p></li>
                                 <li><p>Rock crushes Scissors</p></li>
                             </ul>
                         </div>

@@ -11,6 +11,9 @@ a {
 a:hover {
     text-decoration: none;
 }
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
 .header {
     background-color: #8945b3;
     box-shadow: 0px -6px 16px 4px #000;
@@ -57,6 +60,10 @@ a:hover {
 .question {
     font-size: 30px;
     font-weight: 600;
+}
+
+.roundTitle {
+    margin: 20px 0px;
 }
 
 .gesture {
@@ -127,17 +134,176 @@ a:hover {
     border: 1px solid #8945b3;
     box-shadow: 2px 2px 12px -2px #000;
 }
+.startButton:focus {
+    background-color: #8945b3;
+    border: 1px solid #8945b3;
+    box-shadow: 2px 2px 12px -2px #000;
+}
 
+.playArea {
+    min-height: 60vh;
+}
+
+.userinfoCont {
+    text-align: center;
+}
+
+.usernameInput {
+    font-size: 24px;
+    padding: 10px;
+    min-width: 500px;
+    border: 1px solid #8945b3;
+}
+
+.usernameInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #d2ade8;
+    opacity: 1; /* Firefox */
+}
+  
+.usernameInput:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #d2ade8;
+}
+  
+.usernameInput::-ms-input-placeholder { /* Microsoft Edge */
+    color: #d2ade8;
+}
+
+.inputLabel {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.userSelection {
+    background-color: white;
+    border: 1px solid #8945b3;
+    padding: 20px 30px;
+}
+
+.userSelectionTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.userTitle {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sheldonGameDiv {
+    width: 100%;
+}
+
+.option {
+    width: 100%;
+    font-size: 20px;
+    height: 50px;
+    color: black;
+    border: 1px solid #8945b3;
+    background-color: #e6beff;
+    -webkit-transition: ease;
+    transition: ease 0.3s;
+}
+
+.option:hover {
+    background-color: #8945b3;
+    border: 1px solid #8945b3;
+    color: white;
+}
+.option:focus {
+    background-color: #8945b3;
+    border: 1px solid #8945b3;
+    color: white;
+}
+.resultMessage {
+    padding: 10px 20px;    
+    text-align: center;
+}
+.resultTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.resultDesc {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.green {
+    background-color: #beffc0;
+    border: 1px solid #28820b;
+}
+.red {
+    background-color: #ffcece;
+    border: 1px solid #d81c1c;
+}
+.neutral {
+    background-color: #f8ffbf;
+    border: 1px solid #9ea017;
+}
+.scoreCont {
+    padding: 10px 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+.scoreName, .score {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.scoreName {
+    font-size: 20px;
+}
+.score {
+    font-size: 40px;
+}
+.nextRound {
+    width: 50%;
+    font-size: 20px;
+    height: 50px;
+    background-color: #8945b3;
+    border: 1px solid #8945b3;
+}
+.nextRound:hover {
+    background-color: #8945b3;
+    border: 1px solid #8945b3;
+    color: white;
+}
+.nextRound:focus {
+    background-color: #8945b3;
+    border: 1px solid #8945b3;
+    color: white;
+}
+.wonIcon {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.nextRound {
+    width: 50%;
+    font-size: 20px;
+    height: 50px;
+    background-color: #8945b3;
+    border: 1px solid #8945b3;
+}
+.startNewGame, .startNewGame:hover, .startNewGame:focus {
+    background-color: #8945b3;
+    border: 1px solid #8945b3;
+}
 /* Mobile responsive */
 @media only screen and (max-width: 768px) {
     .header {
         height: 70px;
     }
     .title {
-        font-size: 15px;
+        font-size: 16px;
     }
     .question {
         font-size: 20px;
+    }
+    .roundTitle {
+        margin: 10px 0px;
     }
     .answer, .rulesList {
         font-size: 16px;
@@ -163,6 +329,71 @@ a:hover {
     .gestureImg {
         max-height: 50px;
         max-width: 50px;
+    }
+    .usernameInput {
+        font-size: 14px;
+        padding: 10px;
+        min-width: 100px;
+        border: 1px solid #8945b3;
+    }
+    .userSelection {
+        background-color: white;
+        border: 1px solid #8945b3;
+        padding: 10px 15px;
+        min-width: 310px;
+    }
+    .inputLabel {
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    .scoreCont {
+        padding: 2px 5px;
+        margin-top: 5px;
+    }
+    .scoreName, .score {
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
+    .scoreName {
+        font-size: 14px;
+    }
+    .score {
+        font-size: 20px;
+    }
+    .nextRound {
+        font-size: 14px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    .option {
+        font-size: 14px;
+        height: 30px;
+        color: black;
+        border: 1px solid #8945b3;
+        background-color: #e6beff;
+        -webkit-transition: ease;
+        transition: ease 0.3s;
+    }
+    .statsCont {
+        padding: 10px 0px;
+    }
+    .resultMessage {
+        padding: 5px 20px;    
+        text-align: center;
+    }
+    .resultTitle {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    .resultDesc {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    .userImage {
+        max-height: 150px;
+        max-width: 150px;
     }
     .contact {
         font-size: 15px;

@@ -11,12 +11,9 @@ export const CHOICE = {
 
 Object.freeze(CHOICE);
 
-export const DECISION = {
-    1: "Win",
-    2: "Draw",
-    3: "Lose"
-};
-
+export const getKeyByValue = (object, value) => {
+    return Object.keys(object).find(key => object[key] === value);
+}
 export const calling = function() {
     console.log(RESULTS[CHOICE.ROCK][CHOICE.SPOCK]);
 }
