@@ -2,9 +2,9 @@ import React from 'react';
 import { Row, Col, Button } from 'antd';
 import { CheckCircleTwoTone, CloseCircleTwoTone } from '@ant-design/icons';
 
-export default function Result({score, username, startNewGame}) {
+export default function Result({score, startNewGame}) {
 
-    let resultContent = (false) ? (
+    let resultContent = (score.user === 7) ? (
         <Row type="flex" justify="center" align="middle" style={{height: '100%', margin: '30px 0px'}}>
             <Col span={24} style={{textAlign: 'center', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
                 <CheckCircleTwoTone twoToneColor="#52c41a" className="wonIcon" />

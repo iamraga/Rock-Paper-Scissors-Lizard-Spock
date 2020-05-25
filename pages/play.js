@@ -99,7 +99,7 @@ const Play = () => {
     else {
         displayContent = (
             <div className="playArea">
-                <Result score={score} username={username} startNewGame={startNewGame} />
+                <Result score={score} startNewGame={startNewGame} />
             </div>
         );
     }
